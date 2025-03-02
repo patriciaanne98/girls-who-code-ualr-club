@@ -286,3 +286,67 @@ body {
 .join-form button:hover {
     background-color: #594A8C;
 }
+
+/* 📌 Mobile Styles (Screens Smaller Than 768px) */
+@media (max-width: 768px) {
+    /* 📌 Navbar Adjustments */
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .search {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* 📌 Content Adjustments */
+    .content {
+        padding: 15px;
+    }
+
+    .content h1 {
+        font-size: 1.8rem;
+    }
+
+    /* 📌 Adjust About Page */
+    .about-text, .about-list {
+        font-size: 1.1rem;
+        max-width: 90%;
+    }
+
+    /* 📌 Adjust Events Page */
+    .events-list {
+        max-width: 90%;
+    }
+
+    .events-list li {
+        font-size: 1rem;
+    }
+
+    /* 📌 Adjust Join Page */
+    .contact-info p {
+        font-size: 1rem;
+    }
+
+    .join-form {
+        width: 90%;
+    }
+
+    .join-form input {
+        font-size: 1rem;
+    }
+
+    /* 📌 Footer Mobile Fix */
+    .footer {
+        font-size: 0.9rem;
+        padding: 10px 0;
+    }
+}
