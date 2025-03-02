@@ -1,0 +1,288 @@
+html {
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    background-color: #B6B9F2;
+    padding-top: 90px; /* Adjust to match the navbar height */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the full height of the viewport */
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align to the top-left */
+    justify-content: flex-start; /* Start from the top */
+    padding: 20px;
+    background-color: #B6B9F2;
+    flex: 1; /* Pushes the footer to the bottom */
+    }
+
+.navbar {
+        width: 100%;
+        max-width: 1200px;
+        height: 75px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        position: fixed; /* Keeps the navbar fixed at the top */
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #631FA6; /* Adjust this to match your design */
+        z-index: 1000; /* Ensures navbar is above other elements */
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+  color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.menu ul li a:hover {
+    color: #594A8C;
+}
+
+.search {
+ display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.srch {
+ width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.btn {
+       height: 40px;
+    background: #A530F2;
+    border: 2px solid #A530F2;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.srch:focus {
+    outline: none;
+}
+
+.content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Positions content at the top */
+        align-items: center; /* Centers content horizontally */
+        text-align: center;
+        width: 100%;
+        margin-top: 10px; /* Pushes it below the navbar */
+        padding: 20px;
+}
+
+.content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px; /* Adds spacing below the heading */
+}
+
+.center-image {
+    display: block;
+    margin: 10px auto 20px;
+    width: 80%; /* Make it responsive */
+    max-width: 500px; /* Prevents it from getting too large on desktops */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.why-join {
+    text-align:center;
+    color:white;
+    font-weight: bold;
+    font-size: 1.5rem; /* Adjust as needed */
+}
+
+.par {
+    font-size: 1.2rem;
+}
+.lists {
+    font-size:1.2rem;
+    list-style-type: none; /* Removes bullets */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Adjusts spacing */
+}
+
+
+.footer {
+    width: 100%;
+    background-color: black; /* Adjust color if needed */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
+}
+
+.about-text {
+    color: white;
+    text-align: center; /* Centers the text */
+    font-size: 1.2rem; /* Adjusts readability */
+    max-width: 800px; /* Limits paragraph width */
+    margin: 20px auto; /* Centers the block horizontally */
+    line-height: 1.6; /* Improves readability */
+}
+
+.mission {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.what-we-do {
+    text-align:center;
+    font-size: 2rem;
+    color: white;
+    margin-right: 0px;
+}
+
+.about-list {
+    text-align:center;
+    list-style-type: none;
+    font-size:1.3rem;
+    margin-right: 30px;
+    color: white;
+}
+
+/* Center and Style the Events Section */
+.content h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.events-list {
+    list-style-type: none; /* Removes bullets */
+    padding: 0;
+    max-width: 800px; /* Keeps it from stretching too wide */
+    margin: 0 auto; /* Centers the list */
+    text-align: left; /* Aligns text properly */
+}
+
+.events-list li {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.events-list a {
+    color: #A530F2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.events-list a:hover {
+    text-decoration: underline;
+    color: #594A8C;
+}
+
+/* Join Page Styles */
+.join-text {
+    text-align: center;
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 20px auto;
+    line-height: 1.6;
+    color: white;
+}
+
+.contact-info {
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.contact-info a {
+    color: #A530F2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: #594A8C;
+}
+
+/* Form Styling */
+.join-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.join-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.join-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #A530F2;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.join-form button:hover {
+    background-color: #594A8C;
+}
