@@ -1,6 +1,11 @@
+/* 🌟 GENERAL STYLES */
 html {
     box-sizing: border-box;
     min-height: 100vh;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
 body {
@@ -13,50 +18,47 @@ body {
     padding-top: 90px; /* Adjust to match the navbar height */
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures the full height of the viewport */
+    min-height: 100vh; /* Ensures full viewport height */
+    margin: 0;
 }
 
+/* 🌟 MAIN CONTAINER */
 .main {
     width: 100%;
-    min-height: 100vh;
+    flex: 1; /* Pushes footer down */
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align to the top-left */
-    justify-content: flex-start; /* Start from the top */
+    align-items: center; 
+    justify-content: flex-start; 
     padding: 20px;
-    background-color: #B6B9F2;
-    flex: 1; /* Pushes the footer to the bottom */
-    }
-
-.navbar {
-        width: 100%;
-        max-width: 1200px;
-        height: 75px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 20px;
-        position: fixed; /* Keeps the navbar fixed at the top */
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: #631FA6; /* Adjust this to match your design */
-        z-index: 1000; /* Ensures navbar is above other elements */
 }
 
-.icon {
+/* 🌟 NAVBAR */
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    height: 75px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed; /* Keeps navbar fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #631FA6;
+    z-index: 1000;
 }
 
+/* 🌟 NAVBAR LOGO */
 .logo {
-  color: white;
+    color: white;
     font-size: 30px;
     font-weight: bold;
 }
 
+/* 🌟 NAV MENU */
 .menu ul {
     display: flex;
     gap: 30px;
@@ -68,29 +70,31 @@ body {
 .menu ul li a {
     text-decoration: none;
     color: white;
-    transition: 0.4s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .menu ul li a:hover {
     color: #594A8C;
 }
 
+/* 🌟 SEARCH BAR */
 .search {
- display: flex;
+    display: flex;
     align-items: center;
     gap: 10px;
 }
 
 .srch {
- width: 200px;
+    width: 200px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
     text-align: center;
 }
 
+/* 🌟 BUTTON */
 .btn {
-       height: 40px;
+    height: 40px;
     background: #A530F2;
     border: 2px solid #A530F2;
     color: white;
@@ -100,114 +104,66 @@ body {
     border-radius: 8px;
 }
 
-.btn:focus {
-    outline: none;
+.btn:hover {
+    background: #8229D8;
 }
 
-.srch:focus {
-    outline: none;
-}
-
+/* 🌟 CONTENT SECTION */
 .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start; /* Positions content at the top */
-        align-items: center; /* Centers content horizontally */
-        text-align: center;
-        width: 100%;
-        margin-top: 10px; /* Pushes it below the navbar */
-        padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+    padding: 20px;
 }
 
-.content h1 {
+/* 🌟 HEADINGS */
+.content h1, .content h2 {
     font-size: 2rem;
     font-weight: bold;
     color: white;
-    margin-bottom: 20px; /* Adds spacing below the heading */
+    margin-bottom: 20px;
 }
 
+/* 🌟 RESPONSIVE IMAGE */
 .center-image {
     display: block;
     margin: 10px auto 20px;
-    width: 80%; /* Make it responsive */
-    max-width: 500px; /* Prevents it from getting too large on desktops */
-    height: auto; /* Maintains aspect ratio */
+    width: 80%;
+    max-width: 500px;
+    height: auto;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.why-join {
-    text-align:center;
-    color:white;
-    font-weight: bold;
-    font-size: 1.5rem; /* Adjust as needed */
-}
-
-.par {
-    font-size: 1.2rem;
-}
-.lists {
-    font-size:1.2rem;
-    list-style-type: none; /* Removes bullets */
-    padding: 0; /* Removes default padding */
-    margin: 0; /* Adjusts spacing */
-}
-
-
-.footer {
-    width: 100%;
-    background-color: black; /* Adjust color if needed */
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    position: relative;
-    bottom: 0;
-    margin-top: auto;
-}
-
+/* 🌟 ABOUT PAGE */
 .about-text {
-    color: white;
-    text-align: center; /* Centers the text */
-    font-size: 1.2rem; /* Adjusts readability */
-    max-width: 800px; /* Limits paragraph width */
-    margin: 20px auto; /* Centers the block horizontally */
-    line-height: 1.6; /* Improves readability */
-}
-
-.mission {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
     color: white;
-}
-
-.what-we-do {
-    text-align:center;
-    font-size: 2rem;
-    color: white;
-    margin-right: 0px;
 }
 
 .about-list {
-    text-align:center;
-    list-style-type: none;
-    font-size:1.3rem;
-    margin-right: 30px;
-    color: white;
-}
-
-/* Center and Style the Events Section */
-.content h2 {
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
+    list-style-type: none;
+    font-size: 1.2rem;
+    color: white;
+    padding: 0;
 }
 
+/* 🌟 EVENTS PAGE */
 .events-list {
-    list-style-type: none; /* Removes bullets */
+    list-style-type: none;
     padding: 0;
-    max-width: 800px; /* Keeps it from stretching too wide */
-    margin: 0 auto; /* Centers the list */
-    text-align: left; /* Aligns text properly */
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .events-list li {
@@ -227,7 +183,7 @@ body {
     color: #594A8C;
 }
 
-/* Join Page Styles */
+/* 🌟 JOIN PAGE */
 .join-text {
     text-align: center;
     font-size: 1.3rem;
@@ -254,7 +210,7 @@ body {
     color: #594A8C;
 }
 
-/* Form Styling */
+/* 🌟 FORM STYLES */
 .join-form {
     display: flex;
     flex-direction: column;
@@ -287,27 +243,32 @@ body {
     background-color: #594A8C;
 }
 
-/* 📌 Mobile Styles (Screens Smaller Than 768px) */
+/* 🌟 FOOTER */
+.footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+/* 🌟 RESPONSIVE DESIGN (MOBILE FRIENDLY) */
 @media (max-width: 768px) {
-    /* 📌 Navbar Adjustments */
+    /* 📌 Mobile Navbar */
     .navbar {
         flex-direction: column;
         height: auto;
         padding: 10px 0;
+        text-align: center;
     }
 
     .menu ul {
         flex-direction: column;
-        gap: 15px;
-        text-align: center;
+        gap: 10px;
     }
 
-    .search {
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    /* 📌 Content Adjustments */
+    /* 📌 Adjust Content */
     .content {
         padding: 15px;
     }
@@ -316,26 +277,7 @@ body {
         font-size: 1.8rem;
     }
 
-    /* 📌 Adjust About Page */
-    .about-text, .about-list {
-        font-size: 1.1rem;
-        max-width: 90%;
-    }
-
-    /* 📌 Adjust Events Page */
-    .events-list {
-        max-width: 90%;
-    }
-
-    .events-list li {
-        font-size: 1rem;
-    }
-
-    /* 📌 Adjust Join Page */
-    .contact-info p {
-        font-size: 1rem;
-    }
-
+    /* 📌 Adjust Forms */
     .join-form {
         width: 90%;
     }
@@ -344,7 +286,7 @@ body {
         font-size: 1rem;
     }
 
-    /* 📌 Footer Mobile Fix */
+    /* 📌 Footer */
     .footer {
         font-size: 0.9rem;
         padding: 10px 0;
