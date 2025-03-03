@@ -10,10 +10,7 @@ html {
 
 body {
     font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
     background-color: #B6B9F2;
     padding-top: 90px; /* Adjust to match the navbar height */
     display: flex;
@@ -29,16 +26,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    justify-content: flex-start; 
+    justify-content: center; /* Centering fix */
     padding: 20px;
+    text-align: center;
 }
 
 /* 🌟 NAVBAR */
 .navbar {
     width: 100%;
-    max-width: 1200px;
     height: 75px;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,17 +48,10 @@ body {
     z-index: 1000;
 }
 
-/* 🌟 NAVBAR LOGO */
-.logo {
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-}
-
 /* 🌟 NAV MENU */
 .menu ul {
     display: flex;
-    gap: 30px;
+    gap: 20px; /* Adjusted for better spacing */
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -85,7 +75,7 @@ body {
 }
 
 .srch {
-    width: 200px;
+    width: 180px; /* Adjusted for better mobile fit */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -128,42 +118,13 @@ body {
     margin-bottom: 20px;
 }
 
-/* 🌟 RESPONSIVE IMAGE */
-.center-image {
-    display: block;
-    margin: 10px auto 20px;
-    width: 80%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* 🌟 ABOUT PAGE */
-.about-text {
-    text-align: center;
-    font-size: 1.2rem;
-    max-width: 800px;
-    margin: 20px auto;
-    line-height: 1.6;
-    color: white;
-}
-
-.about-list {
-    text-align: center;
-    list-style-type: none;
-    font-size: 1.2rem;
-    color: white;
-    padding: 0;
-}
-
 /* 🌟 EVENTS PAGE */
 .events-list {
     list-style-type: none;
     padding: 0;
     max-width: 800px;
     margin: 0 auto;
-    text-align: left;
+    text-align: center; /* Fixes alignment */
 }
 
 .events-list li {
@@ -193,23 +154,6 @@ body {
     color: white;
 }
 
-.contact-info {
-    text-align: center;
-    font-size: 1.2rem;
-    color: white;
-}
-
-.contact-info a {
-    color: #A530F2;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-    color: #594A8C;
-}
-
 /* 🌟 FORM STYLES */
 .join-form {
     display: flex;
@@ -217,6 +161,7 @@ body {
     align-items: center;
     max-width: 400px;
     margin: 20px auto;
+    width: 90%;
 }
 
 .join-form input {
@@ -270,15 +215,16 @@ body {
     }
 
     .menu ul {
-        flex-direction: column;
+        flex-direction: column; /* Stack menu items */
         gap: 10px;
-        padding:0;
+        padding: 0;
     }
 
     .menu ul li {
         width: 100%;
         text-align: center;
     }
+
     .search {
         width: 90%; /* Reduce search bar size */
     }
@@ -289,20 +235,19 @@ body {
 
     .btn {
         width: auto; /* Prevent it from stretching */
-        padding: 8px 12px; /* Adjust padding */
-        font-size: 14px; /* Make it slightly smaller */
+        padding: 8px 12px;
+        font-size: 14px;
         text-align: center;
         display: inline-block;
         margin-top: 5px;
     }
 
-    /* 📌 Adjust Content */
-    .content {
-        padding: 15px;
-    }
-
-    .content h1 {
-        font-size: 1.8rem;
+    /* 📌 Center Content on Mobile */
+    .content, .main {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 90%;
     }
 
     /* 📌 Adjust Forms */
