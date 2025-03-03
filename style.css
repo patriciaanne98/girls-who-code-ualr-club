@@ -255,17 +255,45 @@ body {
 
 /* 🌟 RESPONSIVE DESIGN (MOBILE FRIENDLY) */
 @media (max-width: 768px) {
+    .logo {
+        font-size: 1.8rem; /* Reduce size */
+        white-space: nowrap; /* Prevents it from breaking */
+    }
+
     /* 📌 Mobile Navbar */
     .navbar {
         flex-direction: column;
+        align-items: center;
         height: auto;
-        padding: 10px 0;
+        padding: 15px 10px;
         text-align: center;
     }
 
     .menu ul {
         flex-direction: column;
         gap: 10px;
+        padding:0;
+    }
+
+    .menu ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .search {
+        width: 90%; /* Reduce search bar size */
+    }
+
+    .srch {
+        width: 100%; /* Full width */
+    }
+
+    .btn {
+        width: auto; /* Prevent it from stretching */
+        padding: 8px 12px; /* Adjust padding */
+        font-size: 14px; /* Make it slightly smaller */
+        text-align: center;
+        display: inline-block;
+        margin-top: 5px;
     }
 
     /* 📌 Adjust Content */
