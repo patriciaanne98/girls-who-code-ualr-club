@@ -56,7 +56,7 @@ padding: 20px 40px;
   }
 
   header.primary h1 {
-    font-size:2rem;
+    font-size:2.3rem;
     margin:auto;
     padding: 10px;
   }
@@ -106,7 +106,7 @@ transition:0.4s;
   #content h2 {
     display: block;
     text-align:center;
-    text-shadow: 1px 5px #000000;
+    text-shadow: 1px 1px #000000;
 color:white;
 font-size:2rem;
 margin:auto;
@@ -226,7 +226,7 @@ padding: 10px 0;
   /*---- Top Right Bottom Left ------*/
   padding: 100px;
   background: #DFF2B6;
-  border-radius: 20px;
+  border-radius: 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 4);
 }
 
@@ -266,7 +266,7 @@ padding: 10px 0;
   /*---- Top Right Bottom Left ------*/
   padding: 100px;
   background: #DFF2B6;
-  border-radius: 10px;
+  border-radius: 0px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 4);
 }
 
@@ -312,7 +312,7 @@ padding: 10px 0;
 
 
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 1000px) {
   nav.primary ul {
     flex-direction: column;
     gap: 10px;
@@ -322,5 +322,7 @@ padding: 10px 0;
 
   nav.primary ul li a {
     display: block;
+    float: none;
+    width: 100%;
   }
 }
