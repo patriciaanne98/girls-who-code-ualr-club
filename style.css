@@ -216,11 +216,7 @@ padding: 10px 0;
 }
 
 #events-content {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content:center;
+ display:block;
   margin: 100px;
   /*---- Top Right Bottom Left ------*/
   padding: 100px;
@@ -255,11 +251,7 @@ padding: 10px 0;
 }
 
 #join-content {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content:center;
+  display:block;
   margin: 100px;
   /*---- Top Right Bottom Left ------*/
   padding: 100px;
