@@ -304,25 +304,3 @@ padding: 10px 0;
   color:black;
 }
 
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1000px) {
-  nav.primary ul {
-    flex-direction: column;
-    gap: 10px;
-    max-width: 200px;
-    margin: 20px auto;
-  }
-
-  nav.primary ul li a {
-    display: block;
-    float: none;
-    width: 100%;
-  }
-}
