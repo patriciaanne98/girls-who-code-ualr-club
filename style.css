@@ -291,3 +291,132 @@ padding: 10px 0;
   color:black;
 }
 
+@media (max-width:600px) {
+
+  .container {
+width:100%;
+  }
+
+  header.primary {
+    text-align:center;
+width:100%;
+  }
+  header.primary h1 {
+    font-size:1.6rem;
+    margin:auto;
+    padding: 5px;
+  }
+
+  header.primary h2 {
+    font-size:1rem;
+    margin:auto;
+    padding: 5px;
+  }
+
+  nav.primary ul {
+    display:flex;
+   flex-direction:row;
+   align-items: center;
+   justify-content: center;
+   width:70%;
+  }
+
+  nav.primary ul li {
+    width: 50%;
+    max-width: 600px;
+  }
+
+  body {
+width:80%;
+  }
+
+  p {
+    display:block;
+    text-align: center;
+    font-size:1.1rem;
+  }
+
+  #about-content p {
+      display:block;
+      width: 75%;
+      text-align: center;
+      font-size:1rem;
+  }
+
+  #events-content {
+    display:block;
+     width:80%;
+     /*---- Top Right Bottom Left ------*/
+     padding: 20px;
+     background: #DFF2B6;
+     border-radius: 0;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 4);
+   }
+   #events-content h2 {
+    display:block;
+    text-align:center;
+    font-size:1.3rem;
+    color:black;
+    padding: 10px 0;
+    text-shadow: 1px 2px black; 
+  }
+
+  #events-content ul {
+    display:block;
+    text-align: center;
+    font-size:1rem;
+    width:75%;
+  }
+  
+  #events-content ul li {
+    display:block;
+    text-align: center;
+    list-style-type: none;
+    font-size:1rem;
+    width:75%;
+    color:#9305F2;
+  }
+
+  #join-content {
+    display:block;
+    width:70%;
+    /*---- Top Right Bottom Left ------*/
+    padding: 20px;
+    background: #DFF2B6;
+    border-radius: 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 4);
+  }
+
+  #join-content h2 {
+    display:block;
+    text-align:center;
+    font-size:1rem;
+    color:black;
+    margin:auto;
+    padding: 0;
+    text-shadow: 1px 1px #9305F2; 
+  }
+
+  #join-content p {
+    display:block;
+    text-align:center;
+    font-size:.5rem;
+    width:50%;
+    padding: 20px 0;
+    color:black;
+  }
+
+  #contact-info p a {
+    display:block;
+    text-align:center;
+    font-size:.5rem;
+    width:50%;
+    padding: 0;
+    color:black;
+  }
+  
+
+  img {
+    max-width:100%;
+  }
+}
