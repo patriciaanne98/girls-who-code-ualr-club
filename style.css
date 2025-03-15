@@ -291,6 +291,11 @@ padding: 10px 0;
   color:black;
 }
 
+
+#join-content form {
+  display:block;
+  text-align:center;
+}
 @media (max-width:600px) {
 
   .container {
